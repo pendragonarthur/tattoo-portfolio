@@ -1,0 +1,270 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+a 
+    text-decoration: none
+    color: white
+
+body, html 
+    height: 100%
+
+ul li 
+    list-style: none
+
+// ------------------- NAVBAR ------------------- ////
+
+.navbar-container 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: 'Poppins', sans-serif
+    padding: 32px 64px
+    width: 100%
+    background-color: #101010
+
+    .link-container 
+        display: flex
+        gap: 80px
+        font-size: 22px
+        
+        .link 
+            transition: .3s
+            color: #ffff
+            &:hover
+                color: #ce8f3d
+
+    .logo
+        font-size: 48px
+        color: #ffff
+        font-weight: 400
+        font-family: 'Monsieur La Doulaise'
+
+// ------------------- HOME ------------------- ////
+
+.home-container
+    padding: 48px
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "span-content" "content"
+    background-image:   url('/tattoo1.jpg')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position: center top
+    min-height: 100vh
+    
+    .span-content
+        grid-area: span-content
+        height: 200px
+        width: auto
+    
+
+    .content
+        margin-top: -50px
+        grid-area: content
+
+        .home-title
+            font-family: 'Montserrat'
+            font-size: 64px
+            margin-bottom: 48px
+            color: #ffff
+            letter-spacing: 8px
+            font-weight: 700
+
+        #appointment-btn
+            color: #ffff
+            background-color:  #ce8f3d
+            border: none
+            border-radius: 24px
+            font-size: 24px
+            padding: 20px 40px
+            font-family: 'Poppins'
+            font-weight: 600
+            cursor: pointer
+            transition: .5s
+            opacity: 0.9
+            margin-bottom: 128px
+            &:hover
+                background-color: #ffff
+                color: #ce8f3d
+                scale: 105%
+        
+        .icons-container
+            display: flex
+            gap: 32px
+            font-size: 18px
+            align-items: center
+
+            .span-line
+                color: #ce8f3d
+                border: 2px solid
+                display: flex
+                width: 50%
+                height: 2px
+                border-radius: 2px
+                
+            .icon
+                transition: .5s
+                color: #ce8f3d
+                cursor: pointer
+                &:hover
+                    color: #ffff
+
+// ------------------- ABOUT ------------------- ////
+.container
+    background-image: url("/layered-waves-haikei.svg")
+    background-repeat: no-repeat
+    background-size: cover
+    
+    
+.about-container
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 48px
+    
+
+    .title-container 
+        display: flex
+        width: 100%
+        justify-content: center
+        align-items: center
+        margin-top: 64px
+
+        .title
+            color: #ffff
+            font-family: 'Montserrat', sans-serif
+            font-size: 48px
+            font-weight: 500
+            letter-spacing: 12px
+            margin-bottom: 64px
+    
+    .span-line
+        color: #ce8f3d
+        border: 2px solid
+        display: flex
+        width: 50%
+        height: 2px
+        border-radius: 2px
+        margin-bottom: 32px
+
+    .text 
+        font-size: 20px
+        color: #ffff
+        font-family: 'Poppins', sans-serif
+        width: 40%
+        margin: 32px 0 64px 0
+
+
+    img 
+        margin-bottom: 128px
+// ------------------- ARTISTAS ------------------- ////
+
+.artistas-container
+    background-color: #1f1f1f
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 48px 48px 128px 48px
+
+    .title-container
+        padding: 32px 64px
+
+        .title
+            color: #ffff
+            font-family: 'Montserrat', sans-serif
+            font-size: 48px
+            font-weight: 500
+            letter-spacing: 12px
+
+    .span-line
+        color: #ce8f3d
+        border: 2px solid
+        display: flex
+        width: 50%
+        height: 2px
+        border-radius: 2px
+        margin-bottom: 64px
+
+.artistas-grid
+    display: grid
+    grid-auto-rows: repeat(3, 1fr)
+    grid-template-columns: 1fr
+    grid-template-areas: "ste" "blackout" "lari"
+
+    .artist-bio
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 48px
+
+        .photo
+            box-shadow: 11px 14px 30px 5px rgba(0,0,0,0.3)
+    
+        .text
+            font-size: 24px
+            font-family: 'Poppins', sans-serif
+            color: #ffff
+
+            strong
+                color: #ce8f3d
+                font-weight: 500
+                font-size: 48px
+            
+
+#ste
+    grid-area: ste
+
+#blackout
+    grid-area: blackout
+
+#lari
+    grid-area: lari
+
+
+
+
+
+
+
+
+
+// ------------------- FOOTER ------------------- ////
+
+.footer-container 
+    width: 100%
+    font-family: 'Poppins', sans-serif
+    font-size: 18px
+    font-weight: 400
+    color: #ffff
+    background-color: #101010 
+    padding: 24px
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    .footer-text
+        display: flex
+        align-items: center
+        gap: 10px
+    .item3
+        display: flex
+        gap: 32px
+
+.icon
+    color: #ce8f3d
+
+.copy 
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #101010
+    color: #4d4d4da6
+    font-family: 'Poppins', sans-serif
+    font-size: 14px
+    
